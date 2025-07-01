@@ -583,9 +583,9 @@
       text-align: center;
 
       @include media("<=phone") {
-        max-width: 255px;
         width: 100%;
         text-align: left;
+        padding-left: 1rem;
         margin-left: auto;
         word-break: break-word;
       }
@@ -638,7 +638,13 @@
       }
     }
   }
+  
+@media (max-width: 500px) {
+  .email {
+font-size: 2rem;
 
+  }
+}
   &__footer {
     justify-content: center;
     position: relative;
